@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently -n \"APP,SERVER\" -c \"green, blue\" \"npm run dev -w app\" \"npm run dev -w server\""
+    "start": "concurrently -n \"APP,SERVER\" -c \"green, blue\" \"npm run dev -w app\" \"npm run dev -w server\"",
+    "dev": "npm run start"
   },
   "keywords": [],
   "author": "",
