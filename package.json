@@ -1,0 +1,24 @@
+{
+  "name": "websocket-chat-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"APP,SERVER\" -c \"green, blue\" \"npm run dev -w app\" \"npm run dev -w server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "workspaces": [
+    "server",
+    "app"
+  ],
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "uuid": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0"
+  }
+}
