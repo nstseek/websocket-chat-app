@@ -10,6 +10,7 @@
     "dev": "nodemon --watch src --exec ts-node src/index.ts"
   },
   "dependencies": {
+    "uuid": "^11.0.5",
     "ws": "^8.18.0"
   },
   "devDependencies": {
