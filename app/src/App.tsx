@@ -53,8 +53,8 @@ function Form({ wsConnection }: Props) {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        setInputValue("");
         wsConnection.send(inputValue);
+        setInputValue("");
       }}
     >
       <input
